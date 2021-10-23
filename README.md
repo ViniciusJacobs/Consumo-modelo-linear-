@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Modelo regressão
+# Consumo
 
 ``` r
 library(tidyverse)
@@ -221,6 +221,7 @@ summary(regressao_linear)
 #### O resumo do modelo nos mostra que:
 
 ##### - R^2: Podemos interpretar que o modelo ajustado com a variável idade consegue explicar 88,34% a variável dependente.
+##### - O p-value é muito inferior a 0,05, sendo assim descartamos a Hipótese Nula. O estudo estima que as variáveis idade e renda tem forte relçao com o consumo.
 
 #### Como fica o modelo com a inclusão de outras variáveis?
 
@@ -248,4 +249,4 @@ summary(regressao_linear)
 #> F-statistic: 235.6 on 2 and 26 DF,  p-value: < 2.2e-16
 ```
 
-#### Podemos concluir que com a inclusão da variável Renda Mensal o modelo explica mais o consumo das pessoas nesse grupo analisado.
+#### Podemos concluir que com a inclusão da variável Renda Mensal o modelo explica mais o consumo das pessoas nesse grupo analisado, visto que o R^2 ajustado ficou 94,37%.
